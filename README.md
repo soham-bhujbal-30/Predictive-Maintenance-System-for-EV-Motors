@@ -1,50 +1,21 @@
-🔧 Predictive Maintenance System for EV Motors (IoT + ThingSpeak)
-An IoT-based predictive maintenance solution for Electric Vehicle (EV) motors, designed to monitor key parameters, detect anomalies, and predict faults using ThingSpeak for cloud data storage, analysis, and visualization.
+# Predictive-Maintenance-System-for-EV-Motors
 
-🚀 Features
-Real-time Sensor Data Acquisition (temperature, vibration, current, RPM)
+# I. Core Concept:
+This project aims to develop a sophisticated Predictive Maintenance (PdM) system for Electric Vehicle (EV) motors. The central idea is to continuously monitor key operational parameters of an EV motor in real-time to detect subtle anomalies and predict potential failures before they occur. By enabling proactive maintenance interventions, this system seeks to significantly reduce unexpected downtime, prevent catastrophic failures, extend the motor's lifespan, and ultimately lower operational costs and enhance vehicle reliability and safety.
 
-Wi-Fi Enabled Data Upload to ThingSpeak via ESP32
+# II. Problem Statement & Motivation:
+EV motors are critical, high-value components. Unexpected failures can lead to significant inconvenience, high repair costs, and safety concerns. Traditional reactive or time-based maintenance approaches are often inefficient, leading to either unnecessary maintenance or unforeseen breakdowns. A predictive maintenance system, by identifying early warning signs of degradation, offers a more intelligent and cost-effective approach to asset management.
 
-Live Graphs & Historical Trends on ThingSpeak Channels
+# III. Objectives:
+    1. Real-time Data Acquisition
+    2. Efficient Data Pre-processing
+    3. On-Device Anomaly Detection
+    4. Proactive Alerting
+    5. Optional Data Logging
 
-Custom MATLAB Analysis scripts in ThingSpeak for anomaly detection
-
-Automated Alerts using ThingSpeak’s ThingHTTP & React features
-
-Low-Cost & Scalable solution for EV fleet monitoring
-
-🛠️ Tech Stack
-Hardware: ESP32, Vibration Sensor, Current Sensor, Temperature Sensor
-
-Platform: ThingSpeak IoT Analytics Platform
-
-Communication: MQTT / HTTP API over Wi-Fi
-
-Data Processing: MATLAB scripts within ThingSpeak
-
-Visualization: ThingSpeak charts & dashboards
-
-📈 Use Cases
-Detecting bearing wear, overheating, or vibration issues in EV motors
-
-Preventive maintenance scheduling to reduce downtime
-
-Monitoring motor health remotely in real-time
-
-📂 Repository Structure
-bash
-Copy
-Edit
-/hardware      → Circuit diagrams & sensor connections  
-/firmware      → ESP32 Arduino code for sensor reading & ThingSpeak upload  
-/matlab        → ThingSpeak MATLAB analysis scripts  
-/docs          → Setup guides, usage instructions, and documentation  
-📜 How It Works
-Sensors collect EV motor parameters in real time.
-
-ESP32 sends data to ThingSpeak channel via Wi-Fi.
-
-MATLAB scripts on ThingSpeak analyze trends and predict faults.
-
-Alerts triggered via ThingSpeak React when anomalies are detected.
+# IV. Expected Outcomes:
+    1. A functional prototype of an embedded predictive maintenance system on an STM32 platform.
+    2. Demonstrated ability to acquire, process, and analyze sensor data in real-time.
+    3. Proof of concept for anomaly detection using thresholding and trend analysis.
+    4. An effective alerting system for early fault detection.
+    5. A foundation for future expansion into more advanced prognostics and communication capabilities.
